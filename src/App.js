@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import { CssBaseline } from '@material-ui/core';
+import Header from './components/Header';
+import PlaceToVisit from './components/PlaceToVisit';
+import video from './vid.mp4'
+import img from './components/wallpaperflare.com_wallpaper (1).jpg'
+import './App.css'
 
-function App() {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minHeight: '100vh',
+    backgroundImage: img,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  },
+}));
+export default function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.root}>
+      <div className="vid">
+      <video className='videoTag' autoPlay loop muted>
+      <source src={video} type='video/mp4' />
+      </video>
+      </div>
+      <CssBaseline />
+      <Header />
+      <PlaceToVisit />
     </div>
   );
 }
-
-export default App;
