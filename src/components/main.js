@@ -13,6 +13,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: img,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
+    backgroundColor: 'black'
   },
 }));
 
