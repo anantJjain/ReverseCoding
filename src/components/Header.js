@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: '#5AFF3D',
+    color: '#696969',
   },
   container: {
     textAlign: 'center',
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '5rem',
   },
   goDown: {
-    color: '#5AFF3D',
+    color: '#ffffff',
     fontSize: '5rem',
   },
 }));
@@ -53,7 +53,7 @@ export default function Header() {
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
-            REVERSE <br/><span className={classes.colorText}>CODING</span>
+            REVERSE <br/><span className={classes.colorText}>COD;NG</span>
           </h1>
           <IconButton>
             <SortIcon className={classes.icon} />
@@ -69,7 +69,7 @@ export default function Header() {
         <div className={classes.container}>
           <h1 className={classes.title}>
             Welcome to <br />
-            REVERSE <span className={classes.colorText}>CODING.</span>
+            REVERSE <span className={classes.colorText}>COD;NG.</span>
           </h1>
           <Scroll to="place-to-visit" smooth={true}>
             <IconButton>
