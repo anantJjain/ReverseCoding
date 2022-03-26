@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: '#696969',
+    color: 'rgb(196,66,210)',
   },
   container: {
     textAlign: 'center',
@@ -66,7 +66,7 @@ export default function Header() {
         <div className={classes.container}>
           <h1 className={classes.title}>
             Welcome to <br />
-            REVERSE <span className={classes.colorText}>COD;NG.</span>
+            REVERSE <span className={classes.colorText}>COD;NG</span>
           </h1>
           <Scroll to="place-to-visit" smooth={true}>
             <IconButton>
