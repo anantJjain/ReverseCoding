@@ -37,18 +37,20 @@ const Accordion = () => {
             </div>
               ))
             }
+
+        <a href="/" className='btn'id="HomeButton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+               Back to Home
+        </a>
           </div>
         </div>
         
       </div>
       
-      {/* <a href="/" className='btn'>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Home
-      </a> */}
+      
     
     </div>
   );

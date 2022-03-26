@@ -28,14 +28,6 @@ export default function App() {
         <Route path="/windows" component={Accordion} />         
       </Switch>
     
-      {/* <a href="#" className='btn'>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        HackerRank
-      </a> */}
-    
     </BrowserRouter>
    
    
