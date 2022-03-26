@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import { Spline } from 'react-spline';
 import '../src/App.css'
 import Loader from './components/Loader/Loader';
+import Accordion from './components/Accordion';
 // import Spline from '@splinetool/react-spline';
 
 export default function App() {
@@ -25,6 +26,8 @@ export default function App() {
       <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/linux" component={Question} />
+        <Route path="/windows" component={Accordion} />
+            
       </Switch>
       <button className='button'>HackerRank</button>
     </BrowserRouter>
