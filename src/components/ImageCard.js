@@ -48,7 +48,12 @@ export default function ImageCard({ place, checked }) {
             component="h1"
             className={classes.title}
           >
-            {<a className='btn'>{place.title}</a>}
+            {<a className='btn'>
+            {<span></span>}
+            {<span></span>}
+            {<span></span>}
+            {<span></span>}
+            {place.title}</a>}
           </Typography>
           <Typography
             variant="body2"
