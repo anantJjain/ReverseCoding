@@ -1,79 +1,106 @@
-.body{
-  margin: 0 !important;
-}
-  
-  .button {
-    min-width: 300px;
-    min-height: 60px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-weight: 700;
-    color: #313133;
-    background: #bd4b4b;
-  background: linear-gradient(90deg, #bd4b4b 0%, #bd4b4b 100%);
-    border: none;
-    border-radius: 1000px;
-    box-shadow: 12px 12px 24px #bd4b4b;
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    outline: none;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+a.btn {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     position: relative;
-    padding: 10px;
-    }
-  
-  button::before {
-  content: '';
-    border-radius: 1000px;
-    min-width: calc(30px + 12px);
-    min-height: calc(60px + 12px);
-    border: 6px solid #bd4b4b;
-    box-shadow: 0 0 60px #bd4b4b;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #ae2dc4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+a.btn:hover{
+    background: #ae2dc4;
+    color: #050801;
+    box-shadow: 0 0 5px #ae2dc4,
+                0 0 25px #ae2dc4,
+                0 0 50px #ae2dc4,
+                0 0 200px #ae2dc4;
+     /* -webkit-box-reflect:below 1px linear-gradient(transparent, #0005); */
+}
+a.btn:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a.btn:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a.btn span{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-0%, -50%);
-    opacity: 0;
-    transition: all .3s ease-in-out 0s;
-  }
-  
-  .button:hover, .button:focus {
-    color: #313133;
-    transform: translateY(-6px);
-  }
-  
-  button:hover::before, button:focus::before {
-    opacity: 1;
-  }
-  
-  button::after {
-    content: '';
-    width: 30px; height: 30px;
-    border-radius: 100%;
-    border: 6px solid #bd4b4b;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring 1.5s infinite;
-  }
-  
-  button:hover::after, button:focus::after {
-    animation: none;
-    display: none;
-  }
-  
-  @keyframes ring {
-    0% {
-      width: 30px;
-      height: 30px;
-      opacity: 1;
+    display: block;
+}
+a.btn span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#ae2dc4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
     }
-    100% {
-      width: 300px;
-      height: 300px;
-      opacity: 0;
+    50%,100%{
+        left: 100%;
     }
-  }
+}
+a.btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#ae2dc4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a.btn span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#ae2dc4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a.btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ae2dc4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}

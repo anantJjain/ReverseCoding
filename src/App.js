@@ -1,3 +1,4 @@
+
 import React,{useEffect,useState} from 'react';
 import Question from './components/Question/Question';
 import Main from './components/main';
@@ -16,22 +17,31 @@ export default function App() {
     setTimeout(() => {
       setLoad(true)
       // console.log("HELLO")
-    }, 6000);
+    }, 1000);
   }, [])
   
   return (  
     <div>
    { !load ?<div><Loader /></div> : <div>
       <BrowserRouter>
+   
       <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/linux" component={Question} />
-        <Route path="/windows" component={Accordion} />
-            
+        <Route path="/windows" component={Accordion} />         
       </Switch>
-      <button className='button'>HackerRank</button>
+    
+      <a href="#" className='btn'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        HackerRank
+      </a>
+    
     </BrowserRouter>
-    {/* <h1>Hello</h1> */}
+   
+   
     </div>
 } 
 
