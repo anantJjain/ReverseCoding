@@ -1,5 +1,4 @@
 import React from 'react'
-// import {Spline} from 'react-spline'
 import Spline from '@splinetool/react-spline';
 
 function Loader() {

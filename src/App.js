@@ -9,17 +9,17 @@ import Accordion from './components/Accordion';
 
 export default function App() {
 
-  const [load,setLoad] = useState(false)
+  // const [load,setLoad] = useState(false)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoad(true)
-    }, 1000);
-  }, [])
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoad(true)
+  //   }, 1000);
+  // }, [])
   
   return (  
     <div>
-   { !load ?<div><Loader /></div> : <div>
+   {/* { !load ?<div><Loader /></div> : <div> */}
       <BrowserRouter>
    
       <Switch>
@@ -28,21 +28,21 @@ export default function App() {
         <Route path="/windows" component={Accordion} />         
       </Switch>
     
-      <a href="#" className='btn'>
+      {/* <a href="#" className='btn'>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
         HackerRank
-      </a>
+      </a> */}
     
     </BrowserRouter>
    
    
     </div>
-} 
+// } 
 
-    </div>    
+    // </div>    
 
 
     

@@ -21,17 +21,35 @@ const Accordion = () => {
                 {questions.description}
                 <br/>
                 <br/>
-                <Link className="download-link" to={"/assets/Windows/"+questions.download} target="_blank" download>Download Link</Link>
+                {/* <Link className="download-link" to={"/assets/Windows/"+questions.download} target="_blank" download>Download Link</Link> */}
+                <Link className="btn" to={"/assets/Windows/"+questions.download} target="_blank" download>Download Link</Link>
                 <br/>
                  <br/>
-                <button className="ques-btn" id={questions.id} onClick={(e) => {window.open(questions.link)}}>HackerRank button</button>
+                
+              <a href="#" className='btn'  id={questions.id} onClick={(e) => {window.open(questions.link)}}>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+               HackerRank
+              </a>
               </div>
             </div>
               ))
             }
           </div>
         </div>
+        
       </div>
+      
+      {/* <a href="/" className='btn'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Home
+      </a> */}
+    
     </div>
   );
 };
