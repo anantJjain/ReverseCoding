@@ -112,3 +112,29 @@ input:checked ~ .tab-content {
   padding: 1em;
 }
 /*# sourceMappingURL=Accordion.css.map */
+
+.ques-btn{
+  background-color: #410202;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-link{
+  color: rgb(110, 0, 24);
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 22px;
+  
+}
+
+.download-link:hover{
+  color: rgb(0, 112, 112);
+}

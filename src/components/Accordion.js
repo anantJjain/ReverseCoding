@@ -1,5 +1,7 @@
 import React from "react";
 import "./Accordion.css";
+import question from './question.json'
+import {Link} from "react-router-dom"
 
 const Accordion = () => {
   return (
@@ -7,28 +9,26 @@ const Accordion = () => {
       <div class="row">
         <div class="col">
           <div class="tabs">
-            <div class="tab">
-              <input type="checkbox" id="chck1" />
-              <label class="tab-label" for="chck1">
-                Item 1
+            
+            {
+              question.map((questions,key) => (
+                <div class="tab">
+              <input type="checkbox" id={questions.id} />
+              <label class="tab-label" for={questions.id}>
+              Question {questions.number}
               </label>
               <div class="tab-content">
-                <div>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Ipsum, reiciendis!
-                </div>
-                <button>Dummy</button>
+                {questions.description}
+                <br/>
+                <br/>
+                <Link className="download-link" to={"/assets/Windows/"+questions.download} target="_blank" download>Download Link</Link>
+                <br/>
+                 <br/>
+                <button className="ques-btn" id={questions.id} onClick={(e) => {window.open(questions.link)}}>HackerRank button</button>
               </div>
             </div>
-            <div class="tab">
-              <input type="checkbox" id="chck2" />
-              <label class="tab-label" for="chck2">
-                Item 2
-              </label>
-              <div class="tab-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
-              </div>
-            </div>
+              ))
+            }
           </div>
         </div>
       </div>
