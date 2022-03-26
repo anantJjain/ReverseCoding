@@ -3,11 +3,9 @@ import React,{useEffect,useState} from 'react';
 import Question from './components/Question/Question';
 import Main from './components/main';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import { Spline } from 'react-spline';
 import '../src/App.css'
 import Loader from './components/Loader/Loader';
 import Accordion from './components/Accordion';
-// import Spline from '@splinetool/react-spline';
 
 export default function App() {
 
@@ -16,7 +14,6 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoad(true)
-      // console.log("HELLO")
     }, 1000);
   }, [])
   
