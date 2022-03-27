@@ -5,6 +5,7 @@ import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
 import "./header.css";
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -36,11 +37,6 @@ const useStyles = makeStyles((theme) => ({
   container: {
     textAlign: 'center',
   },
-  title: {
-    color: '#fff',
-    fontSize: '5rem',
-
-  },
   goDown: {
     color: '#ffffff',
     fontSize: '5rem',
@@ -68,7 +64,7 @@ export default function Header() {
         collapsedHeight={50}
       >
         <div className={classes.container}>
-          <h1 className={classes.title}>
+          <h1 className="headertitle">
             Welcome to <br />
             REVERSE <span className={classes.colorText}>COD;NG</span>
           </h1>

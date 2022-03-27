@@ -17,6 +17,16 @@
   }
 }
 
+.headertitle{
+  color: #fff;
+  font-size: 5rem;
+}
+
+@media screen and (max-width:800px) {
+  .headertitle{
+    font-size: 3rem !important;
+  }
+}
 
 
 
