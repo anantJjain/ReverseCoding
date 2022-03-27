@@ -3,6 +3,25 @@
 
 
 /* HackerRank button styles */
+.accordion-js{
+  background-color: #000000;
+  margin: 0;
+}
+
+html{
+  background-color: #000000;
+}
+
+.questions-title{
+  font-family: 'Share Tech', sans-serif;
+  font-size:3rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
 a.btn {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;

@@ -1,11 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Accordion.css";
 import question from './question.json'
 import {Link} from "react-router-dom"
 
 const Accordion = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div>
+    <div className="accordion-js">
+      <div style={{textAlign:"center"}} className="questions-title">Questions</div>
       <div class="row">
         <div class="col">
           <div class="tabs">

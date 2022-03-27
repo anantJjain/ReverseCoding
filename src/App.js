@@ -24,8 +24,9 @@ export default function App() {
    
       <Switch>
         <Route path="/" exact component={Main} />
-        <Route path="/linux" component={Question} />
-        <Route path="/windows" component={Accordion} />         
+        <Route path="/linux" component={Accordion} />
+        <Route path="/windows" component={Accordion} />   
+        <Route path="/macos" component={Accordion} />           
       </Switch>
     
     </BrowserRouter>
