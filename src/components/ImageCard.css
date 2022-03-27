@@ -4,15 +4,19 @@ a.btn {
     position: relative;
     display: inline-block;
     padding: 25px 30px;
-    margin: 40px 0;
     color: #bd4b4b;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 50px;
-   
+    font-size: 1.4rem;  
+}
+
+.homebutton{
+
+    font-size: 1.4rem !important;
+    margin : 0 auto !important;
 }
 a.btn:hover{
     background: #bd4b4b;

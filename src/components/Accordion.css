@@ -12,6 +12,23 @@ html{
   background-color: #000000;
 }
 
+.backtohome{
+  margin: 0.3rem auto !important;
+  font-size: 1rem !important;
+}
+
+.backtohomereal{
+  margin: 2rem auto !important;
+  font-size: 1rem !important;
+}
+
+@media screen and (max-width:800px) {
+  .backtohome{
+    font-size: 0.8rem !important;
+
+  }
+}
+
 .questions-title{
   font-family: 'Share Tech', sans-serif;
   font-size:3rem;
@@ -27,17 +44,26 @@ a.btn {
     font-weight: bold;
     position: relative;
     display: inline-block;
-    padding: 25px 30px;
-    margin: 40px 0;
+    padding: 20px 20px;
+    margin: 2px 0;
     color: #bd4b4b;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     overflow: hidden;
-    margin-right: 50px;
+    /* font-size: 1rem; */
+    /* margin-right: 50px; */
    
 }
+
+@media screen and (max-width:320){
+  a.btn{
+    font-size: 0.75em;
+  }
+}
+
+
 a.btn:hover{
     background: #bd4b4b;
     color: #050801;
@@ -263,7 +289,6 @@ input {
 }
 
 .row .col:last-child {
-  margin-left: 1em;
 }
 
 /* Accordion styles */

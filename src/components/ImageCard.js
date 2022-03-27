@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Collapse } from '@material-ui/core';
+import "./ImageCard.css"
 
 const useStyles = makeStyles({
   root: {
@@ -48,12 +49,14 @@ export default function ImageCard({ place, checked }) {
             component="h1"
             className={classes.title}
           >
-            {<a className='btn'>
+            {<a className='btn homebutton'>
             {<span></span>}
             {<span></span>}
             {<span></span>}
             {<span></span>}
             {place.title}</a>}
+
+
           </Typography>
           <Typography
             variant="body2"

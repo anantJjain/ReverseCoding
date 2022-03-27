@@ -23,6 +23,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appbarTitle: {
     flexGrow: '1',
+    lineHeight:'1.25',
+    marginTop:'2.25rem'
   },
   icon: {
     color: '#fff',
@@ -37,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: '#fff',
     fontSize: '5rem',
+
   },
   goDown: {
     color: '#ffffff',
