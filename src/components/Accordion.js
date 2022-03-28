@@ -50,6 +50,15 @@ const Accordion = () => {
                 <span></span>
                Back to Home
         </NavLink>
+
+        <NavLink to="/" className='btn backtohomereal backtohome instructions' style={{marginTop:"2rem"}} id="HomeButton">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+               Instructions
+        </NavLink>
+
           </div>
         </div>
         
