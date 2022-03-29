@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline } from '@material-ui/core';
 import Header from './Header';
@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const classes = useStyles();
   return (
     <div className={classes.root}>
