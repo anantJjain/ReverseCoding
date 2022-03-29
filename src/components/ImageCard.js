@@ -16,7 +16,8 @@ const useStyles = makeStyles({
     textAlign : 'center'
   },
   media: {
-    height: 440,
+    height: 300,
+    width: 360
   },
   title: {
     fontFamily: 'Nunito',
@@ -40,7 +41,7 @@ export default function ImageCard({ place, checked }) {
         <CardMedia
           className={classes.media}
           image={place.imageUrl}
-          title="Contemplative Reptile"
+          title="psp"
         />
         <CardContent>
           <Typography
