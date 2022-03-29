@@ -57,7 +57,8 @@ export default function Header() {
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
-            REVERSE <br/><span className={classes.colorText}>COD;NG</span>
+            DeCrypt
+            {/* <br/><span className={classes.colorText}>COD;NG</span> */}
           </h1>
         </Toolbar>
       </AppBar>
@@ -70,7 +71,7 @@ export default function Header() {
         <div className={classes.container}>
           <h1 className={classes.title}>
             Welcome to <br />
-            REVERSE <span className={classes.colorText}>COD;NG</span>
+            <span className={classes.colorText}>DeCrypt</span>
           </h1>
           <Scroll to="place-to-visit" smooth={true}>
             <IconButton>

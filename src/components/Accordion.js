@@ -51,13 +51,13 @@ const Accordion = () => {
                Back to Home
         </NavLink>
 
-        <NavLink to="/" className='btn backtohomereal backtohome instructions' style={{marginTop:"2rem"}} id="HomeButton">
+        <Link to={{ pathname: "https://docs.google.com/document/d/1BaZVAFCw0ZUW8zvN7_AB706xvcmUFCEHJU6UpJ063Fs/edit?usp=sharing" }} target="_blank" className='btn backtohomereal backtohome instructions' style={{marginTop:"2rem"}} id="HomeButton">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                Instructions
-        </NavLink>
+        </Link>
 
           </div>
         </div>
