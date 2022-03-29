@@ -287,9 +287,9 @@ input {
       -ms-flex: 1;
           flex: 1;
 }
-
+/* 
 .row .col:last-child {
-}
+} */
 
 /* Accordion styles */
 .tabs {
@@ -341,6 +341,7 @@ input {
   -webkit-transition: all .35s;
   transition: all .35s;
   font-family: 'Share Tech', sans-serif;
+  white-space: pre-line;
 
 }
 

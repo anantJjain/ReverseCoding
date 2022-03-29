@@ -26,7 +26,7 @@ export default function App() {
         <Route path="/" exact component={Main} />
         <Route path="/linux" component={Accordion} />
         <Route path="/windows" component={Accordion} />   
-        <Route path="/macos" component={Accordion} />           
+        <Route path="/macos" component={Accordion}/>           
       </Switch>
     
     </BrowserRouter>
