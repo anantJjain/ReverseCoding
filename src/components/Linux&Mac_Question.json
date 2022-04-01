@@ -17,7 +17,7 @@
       "number" : 3 ,
       "download": "A03" ,
       "id": "check3",
-      "description": "The first line of the input contains an integer $T$ (between $1$ and $10$, inclusive), which describes the number of testcases. Each testcase has 1 line, which contains 2 integers $A$ and $B$ (both between $1$ and $9$, inclusive). \n $0 < T \\leq 10$ ,\n$1 \\leq A,B \\leq 9$",
+      "description": "The first line of the input contains an integer $T$ (between $1$ and $100$, inclusive), which describes the number of testcases. Each testcase has 1 line, which contains 2 integers $A$ and $B$ (both between $1$ and $9$, inclusive). \n $0 < T \\leq 10$ ,\n$1 \\leq A,B \\leq 9$",
       "HRlink": "https://www.hackerrank.com/contests/decrypt-round-1/challenges/decrypt-a03"
     },
     {
