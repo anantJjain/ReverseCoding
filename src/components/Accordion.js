@@ -5,18 +5,18 @@ import LMques from './Linux&Mac_Question.json'
 import {Link, NavLink} from "react-router-dom"
 import Latex from "react-latex";
 
-const Accordion = (OS) => {
+const Accordion = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   
   }, []);
 
-  if (OS.location.pathname == "/linux") {
+  if (props.os == "linux") {
     var loc = "Linux/"
     var file = LMques
     console.log(loc)
   }
-  else if (OS.location.pathname == "/macos") {
+  else if (props.os == "macos") {
     var loc = "Macos/"
     var file = LMques
     console.log(loc)
@@ -29,7 +29,10 @@ const Accordion = (OS) => {
 
   
   return (
+
     <div className="accordion-js">
+    { !props.show ? <h1 className="texttrue">The event will start @ 9:00:00 AM on 02nd April 2022</h1>:
+    <div>
       <div style={{textAlign:"center"}} className="questions-title">Questions</div>
       <div class="row">
         <div class="col">
@@ -85,8 +88,8 @@ const Accordion = (OS) => {
         
       </div>
       
-      
-    
+    </div>  
+}     
     </div>
   );
 };
