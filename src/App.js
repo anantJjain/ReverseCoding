@@ -6,8 +6,27 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import '../src/App.css'
 import Loader from './components/Loader/Loader';
 import Accordion from './components/Accordion';
+import axios from 'axios';
+
 
 export default function App() {
+
+  const [time,setTime] = useState(0)
+  const [show,setShow] = useState(false)
+
+  useEffect(() => {
+    axios.get(`http://worldtimeapi.org/api/timezone/Asia/Kolkata`)
+    .then(res => {
+        if ((res.data.unixtime)<=1648993980)
+          setShow(true)
+        
+        // setlocalTime(new Date(time).toLocaleDateString("en-US"));
+        // console.log(time);
+        // console.log(localtime);
+      })        
+}, [])
+
+
 
   // const [load,setLoad] = useState(false)
 
@@ -20,15 +39,13 @@ export default function App() {
   return (  
     <div>
    {/* { !load ?<div><Loader /></div> : <div> */}
-      <BrowserRouter>
-   
-      <Switch>
+   <BrowserRouter>
+   <Switch>
         <Route path="/" exact component={Main} />
-        <Route path="/linux" component={Accordion} />
-        <Route path="/windows" component={Accordion} />   
-        <Route path="/macos" component={Accordion}/>           
+        <Route path="/linux" render={() => <Accordion display={show} os={"linux"} />} />
+        <Route path="/windows" render={() => <Accordion display={show} os={"windows"} />} />   
+        <Route path="/macos" render={() => <Accordion display={show} os={"macos"} />}/>           
       </Switch>
-    
     </BrowserRouter>
    
    
