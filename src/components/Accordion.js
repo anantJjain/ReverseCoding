@@ -32,7 +32,7 @@ const Accordion = (props) => {
   return (
 
     <div className="accordion-js">
-    { !props.show ? <h1 className="texttrue"><DelayedStart /></h1>:
+    { !props.display ? <h1 className="texttrue"><DelayedStart /></h1>:
     <div>
       <div style={{textAlign:"center"}} className="questions-title">Questions</div>
       <div class="row">

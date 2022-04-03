@@ -17,7 +17,7 @@ export default function App() {
   useEffect(() => {
     axios.get(`http://worldtimeapi.org/api/timezone/Asia/Kolkata`)
     .then(res => {
-        if ((res.data.unixtime)<=1648993980)
+        if ((res.data.unixtime)>1648995120)
           setShow(true)
         
         // setlocalTime(new Date(time).toLocaleDateString("en-US"));

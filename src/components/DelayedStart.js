@@ -7,7 +7,7 @@ import './DelayedStart.css'
 function DelayedStart() {
   return (
     <div>   
-        <h1 className='textColor'>The event will start @ 9:00:00 AM on 04th April 2022</h1>
+        <h1 className='textColor'>The event will start @ 9:00:00 AM on 03rd April 2022</h1>
         {/* <img src={gif} alt="Wait"></img> */}
         {/* <Spline scene="https://draft.spline.design/z6zpfoM97uLRGs3c/scene.spline" className='design'/> */}
         
