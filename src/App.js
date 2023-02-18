@@ -7,12 +7,14 @@ import '../src/App.css'
 import Loader from './components/Loader/Loader';
 import Accordion from './components/Accordion';
 import axios from 'axios';
+import Py from './components/Py';
+
 
 
 export default function App() {
 
   const [time,setTime] = useState(0)
-  const [show,setShow] = useState(false)
+  const [show,setShow] = useState(true)
 
   useEffect(() => {
     axios.get(`https://worldtimeapi.org/api/timezone/Asia/Kolkata`)
@@ -42,9 +44,10 @@ export default function App() {
    <BrowserRouter>
    <Switch>
         <Route path="/" exact component={Main} />
+        {/* <Route path="/" exact component={Py} /> */}
         <Route path="/linux" render={() => <Accordion display={show} os={"linux"} />} />
         <Route path="/windows" render={() => <Accordion display={show} os={"windows"} />} />   
-        <Route path="/macos" render={() => <Accordion display={show} os={"macos"} />}/>           
+        <Route path="/macos" render={() => <Accordion display={show} os={"macos"} />}/>          
       </Switch>
     </BrowserRouter>
    

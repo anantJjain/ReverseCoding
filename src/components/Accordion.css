@@ -24,6 +24,13 @@ html{
   font-size: 1rem !important;
 }
 
+.input{
+  margin-top: auto;
+  background-color: #000000;
+  color: white;
+  visibility: visible;
+}
+
 @media screen and (max-width:800px) {
   .backtohome{
     font-size: 0.8rem !important;
@@ -155,7 +162,7 @@ a.btn span:nth-child(4){
 
 /* Download Link styles */
 
-LInk.btn {
+Link.btn {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   position: relative;
@@ -396,22 +403,6 @@ input:checked ~ .tab-content {
   text-transform: uppercase;
 
 }
-
-/* .download-link{
-  
-  color: rgb(110, 0, 24);
-  text-decoration: none;
-  padding-left: 10px;
-  font-size: 22px;
-  
-}
-
-
-
-.download-link:hover{
-  color: rgb(0, 112, 112);
-} */
-
 
 
 .home{

@@ -5,6 +5,7 @@ import LMques from './Linux&Mac_Question.json'
 import {Link, NavLink} from "react-router-dom"
 import Latex from "react-latex";
 import DelayedStart from "./DelayedStart";
+import Py from "./Py";
 
 const Accordion = (props) => {
   useEffect(() => {
@@ -12,12 +13,12 @@ const Accordion = (props) => {
   
   }, []);
 
-  if (props.os == "linux") {
+  if (props.os === "linux") {
     var loc = "Linux/"
     var file = LMques
     console.log(loc)
   }
-  else if (props.os == "macos") {
+  else if (props.os === "macos") {
     var loc = "Macos/"
     var file = LMques
     console.log(loc)
@@ -50,6 +51,8 @@ const Accordion = (props) => {
               <Latex displayMode={false}>{questions.description}</Latex>
                 <br/>
                 {/* <Link className="download-link" to={"/assets/Windows/"+questions.download} target="_blank" download>Download Link</Link> */}
+                <Py />
+                 <span></span>
                 <Link className="btn backtohome" to={"/assets/"+loc+questions.download} target="_blank" download>Download Link</Link>
                 <br/>
                  <br/>
@@ -57,8 +60,7 @@ const Accordion = (props) => {
               <a href="#" className='btn backtohome'  id={questions.id} onClick={(e) => {window.open(questions.HRlink)}}>
                 <span></span>
                 <span></span>
-                <span></span>
-                <span></span>
+
                HackerRank
               </a>
               </div>
