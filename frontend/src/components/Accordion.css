@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
 
 /* HackerRank button styles */
 .accordion-js{
@@ -22,13 +25,6 @@ html{
 .backtohomereal{
   margin: 2rem auto !important;
   font-size: 1rem !important;
-}
-
-.input{
-  margin-top: auto;
-  background-color: #000000;
-  color: white;
-  visibility: visible;
 }
 
 @media screen and (max-width:800px) {
@@ -247,6 +243,11 @@ Link.btn span:nth-child(3){
   }
 }
 
+.btn_container{
+  display: flex;
+  justify-content: space-between;
+}
+
 Link.btn span:nth-child(4){
   bottom: -100%;
   left: 0;
@@ -276,9 +277,9 @@ h2 {
   font-weight: normal;
 }
 
-input {
+.input {
   position: absolute;
-  opacity: 0;
+  /* opacity: 0; */
   z-index: -1;
 }
 
@@ -296,16 +297,20 @@ input {
       -ms-flex: 1;
           flex: 1;
 }
-/* 
-.row .col:last-child {
-} */
 
 /* Accordion styles */
 .tabs {
   border-radius: 8px;
   overflow: hidden;
+  margin: 20px;
   -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.prompt{
+  background-color:  #151515;
+  border-radius: 0 0 5px 5px;
+  padding: 1rem;
 }
 
 .tab {
@@ -345,13 +350,22 @@ input {
 .tab-content {
   max-height: 0;
   padding: 0 1em;
-  color: #000000;
-  background: #efb7b7;
+  /* color: #000000; */
+  /* background: #efb7b7; */
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Share Tech', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   white-space: pre-line;
+  font-size: 1.3rem;
+  /* background-color: #151515; */
+  background-color: #272727;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
+.output{
+  font-family: 'Roboto Mono', monospace;
 }
 
 .tab-close {
@@ -371,16 +385,16 @@ input {
   background: #1a252f;
 }
 
-input:checked + .tab-label {
+.input:checked + .tab-label {
   background: #1a252f;
 }
 
-input:checked + .tab-label::after {
+.input:checked + .tab-label::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-input:checked ~ .tab-content {
+.input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
@@ -404,6 +418,126 @@ input:checked ~ .tab-content {
 
 }
 
+.testcase{
+  margin: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5rem;
+}
+
+.click{
+  background-color: transparent;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding: 20px 20px;
+    margin: 2px 0;
+    color: #bd4b4b;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    overflow: hidden;
+}
+
+@media screen and (max-width:320){
+  .click{
+    font-size: 0.75em;
+  }
+}
+
+
+.click:hover{
+    background: #bd4b4b;
+    color: #050801;
+    box-shadow: 0 0 5px #bd4b4b,
+                0 0 25px #bd4b4b,
+                0 0 50px #bd4b4b,
+                0 0 200px #bd4b4b;
+}
+.click:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+.click:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+.click span{
+    position: absolute;
+    display: block;
+}
+.click span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#bd4b4b);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.click span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#bd4b4b);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.click span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#bd4b4b);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.click span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#bd4b4b);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
 
 .home{
   background-color: transparent;
@@ -413,3 +547,54 @@ button.home{
   background-color: wheat;
 }
 
+.navigators{
+  padding: 10px;
+  background-color: #bbb;
+  display: flex;
+  gap: 5px;
+  border-radius: 5px 5px 0 0;
+}
+  
+.fakeButtons {
+
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+}
+
+.fakeMinimize {
+  background-color: #ffc100;
+  border-color: #9d802c;
+}
+
+.fakeZoom {
+  background-color: #00d742;
+  border-color: #049931;
+}
+
+span {
+  font-weight: bold;
+}
+
+.line1 {
+  color: #9CD9F0;
+}
+
+hr{
+  margin: 4rem;
+  opacity: 0.2;
+  color: #bbb;
+}
+
+.alternate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  color: grey;
+}

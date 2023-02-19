@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 .output{
     font-size: 1.5rem;
 }
-.input{
-    background: azure;
-    color: yellow;
-    margin-top: 2rem;
-    z-index: 10;
+.input_field{
+    z-index: 10 !important;
+    background-color: transparent;
+    padding: 15px;
+    width: 50%;
+    font-family: 'Roboto Mono', monospace;
+    border: none;
+    color: grey;
+    font-size: 1.5rem;
+}
+.input_field:focus{
+    outline: none;
 }
