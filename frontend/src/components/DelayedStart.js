@@ -1,7 +1,5 @@
 import React from 'react'
 import './DelayedStart.css'
-// import {gif} from '../components/ATB3o.gif'
-// import Spline from '@splinetool/react-spline';
 
 
 function DelayedStart() {
