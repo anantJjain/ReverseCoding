@@ -7,7 +7,7 @@ from rest_framework import status
 class EvaluateQuestion(APIView):
     permission_classes = [AllowAny]
 
-    def get(self, request):
+    def post(self, request):
         id = request.data["id"]
         input = request.data["input"]
         if input.isdigit():
