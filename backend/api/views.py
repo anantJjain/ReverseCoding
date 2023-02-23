@@ -55,7 +55,7 @@ def check1(w):
 def check2(w):
     result = ""
     try:
-        n = list(map(int, w.strip().split("\n")))
+        n = list(map(int, w.strip().split(",")))
         if n[0] < 1 or n[0] > 100:
             return "Invalid input"
 
@@ -72,7 +72,7 @@ def check2(w):
 def check3(w):
     result = ""
     try:
-        n = list(w.strip().split("\n"))
+        n = list(w.strip().split(","))
         print(n)
         t = int(n[0].strip())
         print(t)
@@ -93,7 +93,7 @@ def check3(w):
 def check4(w):
     result = ""
     try:
-        n = list(w.strip().split("\n"))
+        n = list(w.strip().split(","))
         print(n)
         t = int(n[0].strip())
         print(t)
@@ -118,7 +118,7 @@ def check5(w):
 
     result = ""
     try:
-        n = list(w.strip().split("\n"))
+        n = list(w.strip().split(","))
         print(n)
         t = int(n[0].strip())
         print(t)
@@ -139,7 +139,7 @@ def check5(w):
 def check6(w):
     result = ""
     try:
-        n = w.strip().split("\n")
+        n = w.strip().split(",")
         t = int(n[0].strip())
         if t < 1 or t > 100:
             return "Invalid input"
@@ -167,7 +167,7 @@ def check7(w):
 
     result = ""
     try:
-        n = list(map(int, w.strip().split("\n")))
+        n = list(map(int, w.strip().split(",")))
         if n[0] < 1 or n[0] > 100:
             return "Invalid input"
 
@@ -197,7 +197,7 @@ def check7(w):
 def check8(w):
     result = ""
     try:
-        n = list(w.strip().split("\n"))
+        n = list(w.strip().split(","))
         t = int(n[0].strip())
         if t < 1 or t > 100:
             return "Invalid input"
@@ -232,7 +232,7 @@ def check8(w):
 def check9(w):
     result = ""
     try:
-        n = list(map(int, w.strip().split("\n")))
+        n = list(map(int, w.strip().split(",")))
         if n[0] < 1 or n[0] > 100:
             return "Invalid input"
 
@@ -261,7 +261,7 @@ def check9(w):
 def check10(w):
     result = ""
     try:
-        n = w.strip().split("\n")
+        n = w.strip().split(",")
         t = int(n[0].strip())
         if t < 1 or t > 100:
             return "Invalid input"
