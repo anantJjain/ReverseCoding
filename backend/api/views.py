@@ -43,7 +43,7 @@ def check1(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
             if n[i] < 0 or n[i] > 20:
@@ -63,7 +63,7 @@ def check2(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
             if n[i] < 0 or n[i] > 1000000:
@@ -84,7 +84,7 @@ def check3(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
             a, b = map(int, n[i].strip().split())
@@ -106,7 +106,7 @@ def check4(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
             a, b, c = map(int, n[i].strip().split())
@@ -132,7 +132,7 @@ def check5(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
             a, b = map(int, n[i].strip().split())
@@ -154,7 +154,7 @@ def check6(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
             s = n[i].strip()
@@ -184,7 +184,7 @@ def check7(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         def prime(n):
             if n <= 1:
@@ -218,7 +218,7 @@ def check8(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
             a, b = map(int, n[i].strip().split())
@@ -255,7 +255,7 @@ def check9(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for x in range(1, len(n)):
             if n[x] < 0 or n[x] > 100:
@@ -288,7 +288,7 @@ def check10(w):
             return "Invalid input"
 
         if len(n) != (n[0] + 1):
-            return "Number of valued entered are not equal to the number of test cases"
+            return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
             s = n[i].strip()
