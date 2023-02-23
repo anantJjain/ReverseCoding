@@ -42,6 +42,9 @@ def check1(w):
         if n[0] < 1 or n[0] > 10:
             return "Invalid input"
 
+        if len(n) != (n[0] + 1):
+            return "Invalid input"
+
         for i in range(1, len(n)):
             if n[i] < 0 or n[i] > 20:
                 return "Invalid input"
@@ -59,6 +62,9 @@ def check2(w):
         if n[0] < 1 or n[0] > 100:
             return "Invalid input"
 
+        if len(n) != (n[0] + 1):
+            return "Invalid input"
+
         for i in range(1, len(n)):
             if n[i] < 0 or n[i] > 1000000:
                 return "Invalid input"
@@ -73,10 +79,11 @@ def check3(w):
     result = ""
     try:
         n = list(w.strip().split(","))
-        print(n)
         t = int(n[0].strip())
-        print(t)
         if t < 1 or t > 100:
+            return "Invalid input"
+
+        if len(n) != (n[0] + 1):
             return "Invalid input"
 
         for i in range(1, len(n)):
@@ -94,10 +101,11 @@ def check4(w):
     result = ""
     try:
         n = list(w.strip().split(","))
-        print(n)
         t = int(n[0].strip())
-        print(t)
         if t < 1 or t > 100:
+            return "Invalid input"
+
+        if len(n) != (n[0] + 1):
             return "Invalid input"
 
         for i in range(1, len(n)):
@@ -119,10 +127,11 @@ def check5(w):
     result = ""
     try:
         n = list(w.strip().split(","))
-        print(n)
         t = int(n[0].strip())
-        print(t)
         if t < 1 or t > 100:
+            return "Invalid input"
+
+        if len(n) != (n[0] + 1):
             return "Invalid input"
 
         for i in range(1, len(n)):
@@ -142,6 +151,9 @@ def check6(w):
         n = w.strip().split(",")
         t = int(n[0].strip())
         if t < 1 or t > 100:
+            return "Invalid input"
+
+        if len(n) != (n[0] + 1):
             return "Invalid input"
 
         for i in range(1, len(n)):
@@ -169,6 +181,9 @@ def check7(w):
     try:
         n = list(map(int, w.strip().split(",")))
         if n[0] < 1 or n[0] > 100:
+            return "Invalid input"
+
+        if len(n) != (n[0] + 1):
             return "Invalid input"
 
         def prime(n):
@@ -200,6 +215,9 @@ def check8(w):
         n = list(w.strip().split(","))
         t = int(n[0].strip())
         if t < 1 or t > 100:
+            return "Invalid input"
+
+        if len(n) != (n[0] + 1):
             return "Invalid input"
 
         for i in range(1, len(n)):
@@ -236,6 +254,9 @@ def check9(w):
         if n[0] < 1 or n[0] > 100:
             return "Invalid input"
 
+        if len(n) != (n[0] + 1):
+            return "Invalid input"
+
         for x in range(1, len(n)):
             if n[x] < 0 or n[x] > 100:
                 return "Invalid input"
@@ -264,6 +285,9 @@ def check10(w):
         n = w.strip().split(",")
         t = int(n[0].strip())
         if t < 1 or t > 100:
+            return "Invalid input"
+
+        if len(n) != (n[0] + 1):
             return "Invalid input"
 
         for i in range(1, len(n)):
