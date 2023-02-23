@@ -38,7 +38,7 @@ def check1(w):
 
     result = ""
     try:
-        n = list(map(int, w.strip().split("\n")))
+        n = list(map(int, w.strip().split(",")))
         if n[0] < 1 or n[0] > 10:
             return "Invalid input"
 
