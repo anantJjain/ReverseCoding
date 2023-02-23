@@ -83,7 +83,7 @@ def check3(w):
         if t < 1 or t > 100:
             return "Invalid input"
 
-        if len(n) != (n[0] + 1):
+        if len(n) != (t + 1):
             return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
@@ -105,7 +105,7 @@ def check4(w):
         if t < 1 or t > 100:
             return "Invalid input"
 
-        if len(n) != (n[0] + 1):
+        if len(n) != (t + 1):
             return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
@@ -131,7 +131,7 @@ def check5(w):
         if t < 1 or t > 100:
             return "Invalid input"
 
-        if len(n) != (n[0] + 1):
+        if len(n) != (t + 1):
             return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
@@ -153,7 +153,7 @@ def check6(w):
         if t < 1 or t > 100:
             return "Invalid input"
 
-        if len(n) != (n[0] + 1):
+        if len(n) != (t + 1):
             return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
@@ -217,7 +217,7 @@ def check8(w):
         if t < 1 or t > 100:
             return "Invalid input"
 
-        if len(n) != (n[0] + 1):
+        if len(n) != (t + 1):
             return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
@@ -287,7 +287,7 @@ def check10(w):
         if t < 1 or t > 100:
             return "Invalid input"
 
-        if len(n) != (n[0] + 1):
+        if len(n) != (t + 1):
             return "Number of values entered are not equal to the number of test cases"
 
         for i in range(1, len(n)):
