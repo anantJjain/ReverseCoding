@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-q@@9l$a6x7u(gvr!vdccxjga37%$8yjzi%aa*$g_6ic*+sq2&n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["34.27.94.62", "dcrypt.duckdns.org", "localhost"]
+ALLOWED_HOSTS = ["34.27.94.62", "dcrypt.duckdns.org"]
 
 
 # Application definition
@@ -53,8 +53,8 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
-# CORS_ORIGIN_WHITELIST = ("https://decrypt-bits.tech/",)
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = ("https://decrypt-bits.tech/",)
 
 ROOT_URLCONF = "reverse_coding.urls"
 
