@@ -5,7 +5,7 @@ import SortIcon from '@material-ui/icons/Sort';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
 import "./header.css";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     height: '100vh',
     fontFamily: 'Nunito',
+    color: "#EEEEEE",
   },
   appbar: {
     background: 'none',
@@ -24,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
   },
   appbarTitle: {
     flexGrow: '1',
-    lineHeight:'1.25',
-    marginTop:'2.25rem'
+    lineHeight: '1.25',
+    marginTop: '2.25rem'
   },
   icon: {
     color: '#fff',

@@ -2,61 +2,58 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import "./Accordion.css"
 
-export default function Py({qid}) {
-  const [output, setOutput] = useState(""),
-        [input, setInput] = useState({
-            "id": qid,
-            "input": ""
-        });
+export default function Py({ qid }) {
+  const [output, setOutput] = useState({}),
+    [input, setInput] = useState({
+      id: qid,
+      input: ""
+      // input2: "",
+      // input3: "",
+    });
 
-  const url = `${input}`;
+  const url = `https://dcrypt.duckdns.org/api/evaluate`;
 
-  const giveOutput = ()=> {
-    // axios.get(url).then((response) => {
-    //   setOutput(response.data)
-    //   console.log(response.data)
-    // })
-
-
-    console.log(input  )
-  //   axios({
-  //     method: "POST",
-  //     url: "https://bits-and-pses.centralindia.cloudapp.azure.com/courseview/",
-  //     data: input
-  // })
+  const giveOutput = () => {
+    axios
+      .post(url, {
+        id: input.id,
+        input: input.input
+      })
+      .then((response) => {
+        setOutput(response.data);
+      });
   }
 
   return (
     <div>
       <div className='testcase'>
-      <input
-        className='input_field'
-              type="text"
-              placeholder="enter test case"
-              onChange={e => {
-                setInput({
-                  ...input,
-                  input: e.target.value,
-                });
-                console.log(input);
-              }}
-              name="test-case"
-              value={input.input}
-            />
+        <input
+          className='input_field'
+          type="text"
+          placeholder="Enter your response"
+          onChange={e => {
+            setInput({
+              ...input,
+              input: e.target.value,
+            });
+          }}
+          name="test-case"
+          value={input.input}
+        />
         <button
           className='click'
           onClick={giveOutput} >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Calculate
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Calculate
         </button>
-    </div>
+      </div>
 
-      <p className='output'>
-          Output: {output}
-      </p>
+      <div className='output'>
+        Output: {output.output}
+      </div>
 
     </div>
   )

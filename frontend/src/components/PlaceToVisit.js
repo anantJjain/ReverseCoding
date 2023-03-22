@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    color: "EEEEEE",
     [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
     },

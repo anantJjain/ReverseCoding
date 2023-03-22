@@ -1,9 +1,17 @@
 .textColor {
     color: #bd4b4b ;
     font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .design{
     width: 60vw;
     height: 40vh;
+}
+
+
+.load{
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
 }
