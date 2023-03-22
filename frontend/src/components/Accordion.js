@@ -10,22 +10,18 @@ import Py from "./Py";
 const Accordion = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
-
   }, []);
 
   if (props.os === "linux") {
     var loc = "Linux/"
     var file = LMques
-    console.log(loc)
   }
   else if (props.os === "macos") {
     var loc = "Macos/"
     var file = LMques
-    console.log(loc)
   } else {
     var loc = "Windows/"
     var file = Winques
-    console.log(loc)
   }
 
 
@@ -37,56 +33,11 @@ const Accordion = (props) => {
         <div>
           <div style={{ textAlign: "center" }} className="questions-title">Questions</div>
 
-          <div class="row">
-            <div class="col">
-              <div class="tabs">
+          <div className="row">
+            <div className="col">
+              <div className="tabs">
 
-                {
-                  file.map((questions, key) => (
-
-                    <div class="tab">
-                      <input type="checkbox" className="input" id={questions.id} />
-
-                      <label class="tab-label" for={questions.id} style={{ fontSize: "1.2rem" }}>
-                        Question {questions.number}
-                      </label>
-                      <div class="tab-content">
-                        <div className="navigators">
-                          <div className="fakeButtons fakeClose"></div>
-                          <div className="fakeButtons fakeMinimize"></div>
-                          <div className="fakeButtons fakeZoom"></div>
-                        </div>
-                        <div className="prompt">
-                        <br />
-                        <p className="line1"><Latex displayMode={false}>{questions.description}</Latex></p>
-                        <div className="output"><Py qid={questions.id} /></div>
-
-                        <hr />
-                       <p className="alternate">Alternate Method</p>
-                        <div className="btn_container">
-                          <Link className="btn backtohome" to={"/assets/" + loc + questions.download} target="_blank" download>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Download Link</Link>
-                          <br />
-                          <br />
-
-                          <a href="#" className='btn backtohome' id={questions.id} onClick={(e) => { window.open(questions.HRlink) }}>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            HackerRank
-                          </a></div>
-                          </div> 
-                      </div>
-                    </div>
-                  ))
-                }
-
-                <div id="btn_container">
+              <div id="btn_container">
                   <div className="accordbuttons">
                     <NavLink to="/" className='btn backtohomereal backtohome' style={{ marginTop: "2rem", alignSelf: "left" }} id="HomeButton">
                       <span></span>
@@ -105,6 +56,58 @@ const Accordion = (props) => {
                     </Link>
                   </div>
                 </div>
+
+                {
+                  file.map((questions, key) => (
+
+                    <div className="tab" key={key}>
+                      <input type="checkbox" className="input" id={questions.id} />
+
+                      <label className="tab-label" for={questions.id} style={{ fontSize: "1.2rem" }}>
+                        Question {questions.number}
+                      </label>
+                      <div className="tab-content">
+                        <div className="navigators">
+                          <div className="fakeButtons fakeClose"></div>
+                          <div className="fakeButtons fakeMinimize"></div>
+                          <div className="fakeButtons fakeZoom"></div>
+                        </div>
+                        <div className="prompt">
+                          <br />
+                          <p className="line1"><Latex displayMode={false}>{questions.description}</Latex></p>
+                          <p className="instructions">Instructions: {questions.inst}</p>
+
+                          <div className="output">
+                            <Py qid={questions.id} />
+                          </div>
+                        </div>
+
+                          <div className="bottom-container">
+                          <p className="alternate">Alternate Method</p>
+                          <div className="btn_container">
+                            <Link className="btn backtohome" to={"/assets/" + loc + questions.download} target="_blank" download>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              Download Link</Link>
+                            <br />
+                            <br />
+
+                            <a href="#" className='btn backtohome' id={questions.id} onClick={(e) => { window.open(questions.HRlink) }}>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              HackerRank
+                            </a></div>
+                            </div>
+                      </div>
+                    </div>
+                  ))
+                }
+
+                
               </div>
             </div>
 
